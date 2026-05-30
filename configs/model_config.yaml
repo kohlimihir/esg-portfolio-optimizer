@@ -1,0 +1,27 @@
+training:
+  train_start: "2015-01-01"
+  train_end: "2021-12-31"
+  val_start: "2022-01-01"
+  val_end: "2022-12-31"
+  test_start: "2023-01-01"
+  test_end: "2024-12-31"
+
+pillar_models:
+  e:
+    model: "xgboost"
+    params: {n_estimators: 400, max_depth: 5, learning_rate: 0.05, subsample: 0.8}
+  s:
+    model: "xgboost"
+    params: {n_estimators: 400, max_depth: 5, learning_rate: 0.05, subsample: 0.8}
+  g:
+    model: "xgboost"
+    params: {n_estimators: 300, max_depth: 4, learning_rate: 0.05, subsample: 0.8}
+
+composite:
+  weights: {e: 0.4, s: 0.3, g: 0.3}
+  use_learned_blend: true
+  blend_target: "controversy_12m"
+
+mlflow:
+  tracking_uri: "file:./mlruns"
+  experiment: "esg_pillars"

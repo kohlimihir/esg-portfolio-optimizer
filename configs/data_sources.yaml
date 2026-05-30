@@ -1,0 +1,25 @@
+universe:
+  source: "sp500_wikipedia"
+  cache_path: "data/raw/sp500_constituents.parquet"
+
+yahoo:
+  fields: ["info", "sustainability", "financials", "history"]
+  history_period: "10y"
+
+edgar:
+  user_agent: "ESG Research Project research@example.com"
+  filings: ["10-K", "DEF 14A"]
+  years_back: 5
+
+gdelt:
+  base_url: "https://api.gdeltproject.org/api/v2/doc/doc"
+  themes: ["ENV_CLIMATECHANGE", "LABOR_DISPUTE", "CORRUPTION", "EMISSIONS"]
+
+epa:
+  ghg_url: "https://www.epa.gov/system/files/other-files/2024-10/ghgp_data_2023.xlsx"
+
+storage:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+  features_path: "data/features"
+  db_url: "sqlite:///data/esg.db"

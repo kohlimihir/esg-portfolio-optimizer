@@ -1,0 +1,9 @@
+universe: "sp500"
+rebalance: "Q"
+top_quantile: 0.2
+benchmark: "SPY"
+max_weight: 0.05
+sector_neutral: true
+transaction_cost_bps: 10
+start: "2015-01-01"
+end: "2024-12-31"

@@ -1,0 +1,15 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY pyproject.toml ./
+RUN pip install --no-cache-dir -e .
+
+COPY src ./src
+COPY configs ./configs
+COPY data ./data
+COPY docs ./docs
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "src/esg_model/dashboard/app.py", "--server.address=0.0.0.0"]
