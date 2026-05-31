@@ -39,7 +39,7 @@ if errorlevel 1 (
     echo ================================================================================
     echo.
     echo Please enter your GitHub repository URL
-    echo Example: https://github.com/yourusername/esg-portfolio-optimizer.git
+    echo Example: https://github.com/kohlimihir/esg-portfolio-optimizer.git
     echo.
     set /p repo_url="GitHub URL: "
     
