@@ -397,16 +397,16 @@ If you use this code in your research or project, please cite:
 
 ```bibtex
 @software{esg_portfolio_optimizer,
-  title = {ESG Portfolio Optimizer: Machine Learning for Sustainable Investing},
-  author = {Your Name},
-  year = {2026},
-  url = {https://github.com/yourusername/esg-portfolio-optimizer}
+  title = ESG Portfolio Optimizer: Machine Learning for Sustainable Investing,
+  author = Mihir Kohli,
+  year = 2026,
+  url = https://github.com/kohlimihir/esg-portfolio-optimizer
 }
 ```
 
 ## Contact
 
-For questions or collaboration opportunities, please open an issue or contact [your.email@example.com]
+For questions or collaboration opportunities, please open an issue or contact mihirkohli2112@gmaill.com
 
 ## Acknowledgments
 
