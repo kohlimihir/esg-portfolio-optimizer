@@ -16,7 +16,7 @@ gdelt:
   themes: ["ENV_CLIMATECHANGE", "LABOR_DISPUTE", "CORRUPTION", "EMISSIONS"]
 
 epa:
-  ghg_url: "https://www.epa.gov/system/files/other-files/2024-10/ghgp_data_2023.xlsx"
+  ghg_url: "https://www.epa.gov/system/files/other-files/2024-10/ghgp_data_parent_company.xlsb"
 
 storage:
   raw_path: "data/raw"

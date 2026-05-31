@@ -5,5 +5,5 @@ benchmark: "SPY"
 max_weight: 0.05
 sector_neutral: true
 transaction_cost_bps: 10
-start: "2015-01-01"
+start: "2022-01-01"  # Out-of-sample only (was 2015-01-01)
 end: "2024-12-31"

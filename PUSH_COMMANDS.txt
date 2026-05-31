@@ -1,0 +1,89 @@
+================================================================================
+                    QUICK COMMANDS TO PUSH TO GITHUB
+================================================================================
+
+OPTION 1: USE THE BATCH FILE (EASIEST)
+---------------------------------------
+Just double-click: push_to_github.bat
+
+It will:
+1. Initialize git (if needed)
+2. Add all files
+3. Commit with a message
+4. Push to GitHub
+
+================================================================================
+
+OPTION 2: MANUAL COMMANDS (STEP BY STEP)
+-----------------------------------------
+
+# Step 1: Navigate to project
+cd "C:\Users\asus\Downloads\Projects\ESG Model"
+
+# Step 2: Initialize git (if not done)
+git init
+
+# Step 3: Add all files
+git add .
+
+# Step 4: Check what will be committed
+git status
+
+# Step 5: Commit
+git commit -m "Initial commit: ESG Portfolio Optimizer with ML pipeline"
+
+# Step 6: Create repository on GitHub
+# Go to: https://github.com/new
+# Name: esg-portfolio-optimizer
+# Description: Production-ready ML system for ESG-based portfolio construction
+# Click "Create repository"
+
+# Step 7: Add remote (replace with YOUR URL)
+git remote add origin https://github.com/YOURUSERNAME/esg-portfolio-optimizer.git
+
+# Step 8: Push to GitHub
+git branch -M main
+git push -u origin main
+
+================================================================================
+
+WHAT GETS PUSHED:
+-----------------
+✓ Source code (src/)
+✓ Configs (configs/)
+✓ Tests (tests/)
+✓ README.md (professional version)
+✓ Docker files
+✓ Utility scripts
+
+WHAT DOESN'T GET PUSHED:
+-------------------------
+✗ Data files (data/)
+✗ Models (models/)
+✗ Documentation (.txt, .md except README)
+✗ MLflow runs
+✗ Cache files
+
+================================================================================
+
+AFTER PUSHING:
+--------------
+1. Go to your GitHub repository
+2. Click "About" gear icon
+3. Add topics: machine-learning, quantitative-finance, esg-investing, 
+   portfolio-optimization, xgboost, python, mlflow, fastapi, streamlit
+4. Add to your resume using RESUME_CONTENT.txt
+
+================================================================================
+
+PROJECT NAME FOR GITHUB:
+------------------------
+esg-portfolio-optimizer
+
+DESCRIPTION FOR GITHUB:
+-----------------------
+Production-ready ML system for ESG-based portfolio construction. Achieves 
+11.29% CAGR with 0.743 Sharpe ratio, outperforming S&P 500 by 2.49% annually 
+through XGBoost models trained on Sustainalytics ratings.
+
+================================================================================
